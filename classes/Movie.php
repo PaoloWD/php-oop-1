@@ -9,6 +9,7 @@ class Movie
     private $description;
     private $movie_duration;
     public $genres;
+    
 
     public function __construct($_title, $_description, $_movie_duration, Genre $genres)
     {
@@ -16,6 +17,7 @@ class Movie
         $this->setDescription($_description);
         $this->setMovie_duration($_movie_duration);
         $this->setGenre($genres);
+       
     }
 
     public function getTitle()
@@ -66,6 +68,9 @@ class Movie
         return $this;
     }
 
+   public function random_vote(){
+    return mt_rand(1, 5);
+   }
 }
 
 ?>
