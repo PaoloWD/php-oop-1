@@ -9,14 +9,22 @@ $genreMovie = new Genre(
     );
 $xx=$genreMovie->getGeneres();
 
+echo '<pre>';
+echo '$pp'.'<br />';
 print_r($xx);
+echo '</pre>';
 
 $firstMovie = new Movie("Pippo nel paese delle meraviglie", "ciaociao", "220", $xx);
 
+echo '<pre>';
+echo '$pp'.'<br />';
 print_r($firstMovie);
+echo '</pre>';
 
-var_dump($firstMovie->getFilmGeneres());
-
+echo '<pre>';
+echo '$pp'.'<br />';
+print_r($firstMovie->getFilmGeneres());
+echo '</pre>';
 
 
 

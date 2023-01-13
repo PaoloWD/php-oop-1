@@ -12,10 +12,6 @@ class Movie{
         $this->setTitle($_title);
         $this->setDescription($_description);
         $this->setMovie_duration($_movie_duration); 
-        echo '<pre>';
-        echo '$pp'.'<br />';
-        print_r($generes);
-        echo '</pre>';
         $this->x = $generes;
 
     }
