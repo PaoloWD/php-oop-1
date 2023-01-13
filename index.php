@@ -2,16 +2,21 @@
 require_once "./classes/Movie.php";
 require_once "./classes/Genre.php";
 
-$genreMovie = new Genre("Fantasy", "Action");
+$genreMovie = new Genre(
+    [
+        "Fantasy", "Azione"
+    ]
+    );
+$xx=$genreMovie->getGeneres();
 
-var_dump($genreMovie);
+print_r($xx);
 
-$firstMovie = new Movie("Pippo nel paese delle meraviglie", "ciaociao", "220", $genreMovie);
+$firstMovie = new Movie("Pippo nel paese delle meraviglie", "ciaociao", "220", $xx);
 
-var_dump($firstMovie);
+print_r($firstMovie);
 
-var_dump($firstMovie->getGenre_1);
-var_dump($firstMovie->getGenre_2);
+var_dump($firstMovie->getFilmGeneres());
+
 
 
 
