@@ -13,12 +13,12 @@ $secondMovie = new Movie("Paolo nel paese dei bonus", "Paolo parte sempre dai bo
 echo '<pre>';
 echo '<h3>Film Completo 1</h3>'.'<br />';
 print_r($firstMovie);
-print_r("Voto delFilm: ".$firstMovie->random_vote());
+print_r("Voto del Film: ".$firstMovie->random_vote());
 echo '</pre>';
 
 echo '<pre>';
 echo '<h3>Film Completo 2</h3>'.'<br />';
 print_r($secondMovie);
-print_r("Voto delFilm: ".$firstMovie->random_vote());
+print_r("Voto del Film: ".$firstMovie->random_vote());
 echo '</pre>';
 ?>
