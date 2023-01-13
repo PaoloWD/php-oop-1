@@ -1,22 +1,23 @@
 <?php
 class Genre{
-    private $generes;
+    private $genre;
 
-    public function __construct($generes){
-        $this->setGeneres($generes);
-
+    public function __construct($_genre){
+        $this->setGenre($_genre);
     }
 
 
-    public function getGeneres()
+    public function getGenre()
     {
-        return $this->generes;
+        return $this->genre;
     }
 
-    public function setGeneres($generes)
+    public function setGenre($genre)
     {
-        $this->generes = $generes;
-   
+        $this->genre = $genre;
+
+        return $this;
     }
+
 }
 ?>
